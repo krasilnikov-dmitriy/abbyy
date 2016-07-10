@@ -1,0 +1,6 @@
+site_url: http://abbyy-ls.ru/
+
+web_driver:
+  remote: true
+  hub_url: http://127.0.0.1:4444/wd/hub
+  implicitly_wait_time: 3

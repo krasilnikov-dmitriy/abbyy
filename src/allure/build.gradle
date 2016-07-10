@@ -1,0 +1,18 @@
+msbuild {
+    projectFile = file('AllureNUnitAdapter.csproj')
+
+    targets = ['Clean', 'Build']
+
+    configuration = 'Release'
+
+    // Generates XML documentation file (from javadoc through custom DocLet)
+    generateDoc = false
+
+    doLast {
+        copy {
+            from "$project.projectDir/bin/Release"
+            into "$project.rootProject.projectDir/packages/NUnit.Extension.AllureListener/tools"
+            exclude 'nunit*'
+        }
+    }
+}

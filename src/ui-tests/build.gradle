@@ -1,0 +1,10 @@
+msbuild {
+    projectFile = file('UITests.csproj')
+
+    targets = ['Clean', 'Build']
+
+    configuration = 'Debug'
+
+    // Generates XML documentation file (from javadoc through custom DocLet)
+    generateDoc = false
+}

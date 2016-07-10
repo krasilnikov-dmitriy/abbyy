@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A59DF3CD-A5FF-47DC-9456-7D5F46D8FCAF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Allure</RootNamespace>
+    <AssemblyName>Allure</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\packages\NUnit.3.4.1\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.engine">
+      <HintPath>..\..\packages\NUnit.Engine.3.4.1\lib\nunit.engine.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.engine.api">
+      <HintPath>..\..\packages\NUnit.Engine.3.4.1\lib\nunit.engine.api.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\..\packages\NUnit.Engine.3.4.1\lib\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit-agent">
+      <HintPath>..\..\packages\NUnit.Engine.3.4.1\lib\nunit-agent.exe</HintPath>
+    </Reference>
+    <Reference Include="nunit-agent-x86">
+      <HintPath>..\..\packages\NUnit.Engine.3.4.1\lib\nunit-agent-x86.exe</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="log4net">
+      <HintPath>..\..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AllureEventListener.cs" />
+    <Compile Include="Helpers\XmlHelper.cs" />
+    <Compile Include="Models\Allure\TestSuiteResult.cs" />
+    <Compile Include="Models\Allure\Description.cs" />
+    <Compile Include="Models\Allure\TestCaseResult.cs" />
+    <Compile Include="Models\Allure\Failure.cs" />
+    <Compile Include="Models\Allure\Step.cs" />
+    <Compile Include="Models\Allure\Attachment.cs" />
+    <Compile Include="Models\Allure\Label.cs" />
+    <Compile Include="Models\Allure\Parameter.cs" />
+    <Compile Include="AllureConfig.cs" />
+    <Compile Include="Storages\TestSuiteStorage.cs" />
+    <Compile Include="Models\NUnit\EventArgs\StopTestCaseEventArgs.cs" />
+    <Compile Include="Models\NUnit\EventArgs\StartTestCaseEventArgs.cs" />
+    <Compile Include="Models\NUnit\EventArgs\StartTestSuiteEventArgs.cs" />
+    <Compile Include="Exceptions\TestSuiteNotFoundException.cs" />
+    <Compile Include="Allure.cs" />
+    <Compile Include="Utils\Logger.cs" />
+    <Compile Include="Models\NUnit\EventArgs\StopTestSuiteEventArgs.cs" />
+    <Compile Include="Helpers\DateTimeHelper.cs" />
+    <Compile Include="Storages\TestCaseStorage.cs" />
+    <Compile Include="Exceptions\TestCaseNotFoundException.cs" />
+    <Compile Include="Storages\AttachmentStorage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="app.config" />
+    <None Include="config.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+    <Folder Include="Models\" />
+    <Folder Include="Models\NUnit\" />
+    <Folder Include="Models\Allure\" />
+    <Folder Include="Storages\" />
+    <Folder Include="Models\NUnit\EventArgs\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Utils\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

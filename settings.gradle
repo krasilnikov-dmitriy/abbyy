@@ -1,0 +1,7 @@
+rootProject.name = 'abbyy-ls'
+
+include 'allure'
+project(':allure').projectDir = file('src/allure')
+
+include 'ui-tests'
+project(':ui-tests').projectDir = file('src/ui-tests')
