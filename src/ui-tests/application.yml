@@ -1,4 +1,5 @@
 site_url: http://abbyy-ls.ru/
+screenshots_path: screenshots
 
 web_driver:
   remote: true

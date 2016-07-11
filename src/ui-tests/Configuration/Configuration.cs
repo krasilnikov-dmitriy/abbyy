@@ -9,6 +9,9 @@ namespace UITests.Configuration
         [YamlMember(Alias="site_url")]
         public String SiteUrl { get; set; }
 
+        [YamlMember(Alias = "screenshots_path")]
+        public String ScreenshotsPath { get; set; }
+
         [YamlMember(typeof(WebDriverConfig), Alias="web_driver")]
         public WebDriverConfig WebDriverConfig { get; set; }
 

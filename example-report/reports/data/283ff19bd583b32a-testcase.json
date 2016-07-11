@@ -1,0 +1,38 @@
+{
+  "uid" : "283ff19bd583b32a",
+  "name" : "SliderImageShouldChangeAfterChangeTab(\"Качество перевода\",\"Снижение издержек\")",
+  "title" : "UITests.Tests.SliderImageTests(OpenQA.Selenium.Firefox.FirefoxDriver).SliderImageShouldChangeAfterChangeTab(\"Качество перевода\",\"Снижение издержек\")",
+  "time" : {
+    "start" : 1468217712000,
+    "stop" : 1468217720000,
+    "duration" : 8000
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "",
+    "type" : "MARKDOWN"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "3654e9aedc647491",
+    "name" : "SliderImageTests(OpenQA.Selenium.Firefox.FirefoxDriver)",
+    "title" : "UITests.Tests.SliderImageTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "SliderImageTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  }, {
+    "name" : "suite-title",
+    "value" : "UITests.Tests.SliderImageTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  } ],
+  "parameters" : [ ]
+}

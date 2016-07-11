@@ -1,0 +1,41 @@
+{
+  "uid" : "d98f5e01d7528a95",
+  "name" : "SliderImageShouldChangeAfterChangeTab(\"Автоматизация процессов\",\"Автоматизация процессов\")",
+  "title" : "UITests.Tests.SliderImageTests(OpenQA.Selenium.Firefox.FirefoxDriver).SliderImageShouldChangeAfterChangeTab(\"Автоматизация процессов\",\"Автоматизация процессов\")",
+  "time" : {
+    "start" : 1468216627000,
+    "stop" : 1468216630000,
+    "duration" : 3000
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "Exclude case with same tabs\nTearDown : System.TypeInitializationException : The type initializer for 'System.Drawing.GDIPlus' threw an exception.\n  ----> System.DllNotFoundException : libgdiplus.dylib",
+    "stackTrace" : null
+  },
+  "description" : {
+    "value" : "",
+    "type" : "MARKDOWN"
+  },
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "bad26f980d3793b7",
+    "name" : "SliderImageTests(OpenQA.Selenium.Firefox.FirefoxDriver)",
+    "title" : "UITests.Tests.SliderImageTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "SliderImageTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  }, {
+    "name" : "suite-title",
+    "value" : "UITests.Tests.SliderImageTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  } ],
+  "parameters" : [ ]
+}

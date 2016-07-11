@@ -1,0 +1,41 @@
+{
+  "uid" : "5a8a82e76a60c579",
+  "name" : "PageShouldHaveContactPhone(System.Func`2[OpenQA.Selenium.IWebDriver,UITests.Pages.BasePage])",
+  "title" : "UITests.Tests.ContactInformationTests(OpenQA.Selenium.Firefox.FirefoxDriver).PageShouldHaveContactPhone(System.Func`2[OpenQA.Selenium.IWebDriver,UITests.Pages.BasePage])",
+  "time" : {
+    "start" : 1468216498000,
+    "stop" : 1468216508000,
+    "duration" : 10000
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "TearDown : System.TypeInitializationException : The type initializer for 'System.Drawing.GDIPlus' threw an exception.\n  ----> System.DllNotFoundException : libgdiplus.dylib",
+    "stackTrace" : null
+  },
+  "description" : {
+    "value" : "",
+    "type" : "MARKDOWN"
+  },
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "60f66d734201d0",
+    "name" : "ContactInformationTests(OpenQA.Selenium.Firefox.FirefoxDriver)",
+    "title" : "UITests.Tests.ContactInformationTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "ContactInformationTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  }, {
+    "name" : "suite-title",
+    "value" : "UITests.Tests.ContactInformationTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  } ],
+  "parameters" : [ ]
+}

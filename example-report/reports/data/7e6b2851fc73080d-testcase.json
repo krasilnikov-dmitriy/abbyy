@@ -1,0 +1,41 @@
+{
+  "uid" : "7e6b2851fc73080d",
+  "name" : "SliderImageShouldChangeAfterChangeTab(\"Качество перевода\",\"Снижение издержек\")",
+  "title" : "UITests.Tests.SliderImageTests(OpenQA.Selenium.Firefox.FirefoxDriver).SliderImageShouldChangeAfterChangeTab(\"Качество перевода\",\"Снижение издержек\")",
+  "time" : {
+    "start" : 1468216578000,
+    "stop" : 1468216586000,
+    "duration" : 8000
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "TearDown : System.TypeInitializationException : The type initializer for 'System.Drawing.GDIPlus' threw an exception.\n  ----> System.DllNotFoundException : libgdiplus.dylib",
+    "stackTrace" : null
+  },
+  "description" : {
+    "value" : "",
+    "type" : "MARKDOWN"
+  },
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "bad26f980d3793b7",
+    "name" : "SliderImageTests(OpenQA.Selenium.Firefox.FirefoxDriver)",
+    "title" : "UITests.Tests.SliderImageTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "SliderImageTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  }, {
+    "name" : "suite-title",
+    "value" : "UITests.Tests.SliderImageTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  } ],
+  "parameters" : [ ]
+}

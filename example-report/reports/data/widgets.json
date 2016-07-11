@@ -1,0 +1,110 @@
+{
+  "hash" : "9ae4a52f46fbba0c959575303f697deb73e72d63",
+  "data" : [ {
+    "statistic" : {
+      "total" : 39,
+      "passed" : 26,
+      "pending" : 0,
+      "canceled" : 5,
+      "failed" : 8,
+      "broken" : 0
+    },
+    "time" : {
+      "start" : 1468217620000,
+      "stop" : 1468217817000,
+      "duration" : 197000
+    },
+    "name" : "total",
+    "type" : "TOTAL"
+  }, {
+    "name" : "defects",
+    "type" : "DEFECTS",
+    "data" : [ {
+      "count" : 8,
+      "message" : "  Sprite position not changed.\n  Expected: not equal to \"0px -100px\"\n  But was:  \"0px -100px\"\n\nTearDown : System.TypeInitializationException : The type initializer for 'System.Drawing.GDIPlus' threw an exception.\n  ----> System.DllNotFoundException : libgdiplus.dylib",
+      "status" : "FAILED"
+    } ]
+  }, {
+    "name" : "xunit",
+    "type" : "TITLE_STATISTICS",
+    "data" : [ {
+      "title" : "UITests.Tests.SliderImageTests(OpenQA.Selenium.Firefox.FirefoxDriver)",
+      "statistic" : {
+        "total" : 25,
+        "passed" : 12,
+        "pending" : 0,
+        "canceled" : 5,
+        "failed" : 8,
+        "broken" : 0
+      }
+    }, {
+      "title" : "UITests.Tests.SendDocumentForTranslateTests(OpenQA.Selenium.Firefox.FirefoxDriver)",
+      "statistic" : {
+        "total" : 4,
+        "passed" : 4,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      }
+    }, {
+      "title" : "UITests.Tests.LanguageSwitcherTests(OpenQA.Selenium.Firefox.FirefoxDriver)",
+      "statistic" : {
+        "total" : 3,
+        "passed" : 3,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      }
+    }, {
+      "title" : "UITests.Tests.CalculateTranslationCostTests(OpenQA.Selenium.Firefox.FirefoxDriver)",
+      "statistic" : {
+        "total" : 3,
+        "passed" : 3,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      }
+    }, {
+      "title" : "UITests.Tests.ContactInformationTests(OpenQA.Selenium.Firefox.FirefoxDriver)",
+      "statistic" : {
+        "total" : 3,
+        "passed" : 3,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      }
+    }, {
+      "title" : "UITests.Tests.ServiceDescriptionFeaturesTests(OpenQA.Selenium.Firefox.FirefoxDriver)",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 1,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      }
+    } ]
+  }, {
+    "name" : "behaviors",
+    "type" : "TITLE_STATISTICS",
+    "data" : [ {
+      "title" : "Without feature",
+      "statistic" : {
+        "total" : 39,
+        "passed" : 26,
+        "pending" : 0,
+        "canceled" : 5,
+        "failed" : 8,
+        "broken" : 0
+      }
+    } ]
+  }, {
+    "name" : "environment",
+    "type" : "KEY_VALUE",
+    "data" : [ ]
+  } ]
+}

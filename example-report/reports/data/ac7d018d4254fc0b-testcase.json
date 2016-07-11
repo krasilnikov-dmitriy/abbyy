@@ -1,0 +1,41 @@
+{
+  "uid" : "ac7d018d4254fc0b",
+  "name" : "SliderImageShouldChangeAfterChangeTab(\"Управление переводом\",\"Автоматизация процессов\")",
+  "title" : "UITests.Tests.SliderImageTests(OpenQA.Selenium.Firefox.FirefoxDriver).SliderImageShouldChangeAfterChangeTab(\"Управление переводом\",\"Автоматизация процессов\")",
+  "time" : {
+    "start" : 1468217134000,
+    "stop" : 1468217140000,
+    "duration" : 6000
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "  Sprite position not changed.\n  Expected: not equal to \"0px -100px\"\n  But was:  \"0px -100px\"\n\nTearDown : System.TypeInitializationException : The type initializer for 'System.Drawing.GDIPlus' threw an exception.\n  ----> System.DllNotFoundException : libgdiplus.dylib",
+    "stackTrace" : null
+  },
+  "description" : {
+    "value" : "",
+    "type" : "MARKDOWN"
+  },
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "fb7ce6e4d52b2640",
+    "name" : "SliderImageTests(OpenQA.Selenium.Firefox.FirefoxDriver)",
+    "title" : "UITests.Tests.SliderImageTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "SliderImageTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  }, {
+    "name" : "suite-title",
+    "value" : "UITests.Tests.SliderImageTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  } ],
+  "parameters" : [ ]
+}

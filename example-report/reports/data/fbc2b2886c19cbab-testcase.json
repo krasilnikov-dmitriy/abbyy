@@ -1,0 +1,41 @@
+{
+  "uid" : "fbc2b2886c19cbab",
+  "name" : "CalculateTranslationCostForDocumentShouldHaveRIghtPriceTest(\"Resources\\\\testdoc.txt\",\"Японский\",\"Русский\",System.Collections.Generic.List`1[UITests.Models.ServiceDescription])",
+  "title" : "UITests.Tests.CalculateTranslationCostTests(OpenQA.Selenium.Firefox.FirefoxDriver).CalculateTranslationCostForDocumentShouldHaveRIghtPriceTest(\"Resources\\\\testdoc.txt\",\"Японский\",\"Русский\",System.Collections.Generic.List`1[UITests.Models.ServiceDescription])",
+  "time" : {
+    "start" : 1468216581000,
+    "stop" : 1468216626000,
+    "duration" : 45000
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "System.ArgumentNullException : Value cannot be null.\nParameter name: source",
+    "stackTrace" : null
+  },
+  "description" : {
+    "value" : "",
+    "type" : "MARKDOWN"
+  },
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "fdc8712ef7304427",
+    "name" : "CalculateTranslationCostTests(OpenQA.Selenium.Firefox.FirefoxDriver)",
+    "title" : "UITests.Tests.CalculateTranslationCostTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "CalculateTranslationCostTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  }, {
+    "name" : "suite-title",
+    "value" : "UITests.Tests.CalculateTranslationCostTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  } ],
+  "parameters" : [ ]
+}

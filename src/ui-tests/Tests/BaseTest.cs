@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections;
+using System.Drawing.Imaging;
+using System.IO;
+using System.Reflection;
 using AllureNUnitAdapter;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
@@ -15,6 +18,7 @@ namespace UITests.Tests
     public abstract class BaseTest
     {
         private Type browserType;
+        private String screenshotsPath;
 
         protected BaseTest(Type browserType)
         {
@@ -22,6 +26,16 @@ namespace UITests.Tests
         }
 
         public IWebDriver Driver { get; private set; }
+
+        [OneTimeSetUp]
+        public void InitializeScreenshotDirectory()
+        {
+            string codeBase = Assembly.GetExecutingAssembly().CodeBase;
+            var uri = new UriBuilder(codeBase);
+            string path = Path.GetDirectoryName(Uri.UnescapeDataString(uri.Path));
+
+            screenshotsPath = Path.Combine(path, ConfigurationManager.Instance.ScreenshotsPath);
+        }
 
         [SetUp]
         public void SetUp()
@@ -32,14 +46,23 @@ namespace UITests.Tests
         [TearDown]
         public void TearDown()
         {
-            if (TestContext.CurrentContext.Result.Outcome.Status == TestStatus.Failed)
+            try
             {
-                var test = TestContext.CurrentContext.Test;
-                Screenshot screenshot = ((ITakesScreenshot)Driver).GetScreenshot();
-                Allure.Lifecycle.AttachScreenshot(test.ID, screenshot.AsByteArray);
-            }
+                if (TestContext.CurrentContext.Result.Outcome.Status == TestStatus.Failed)
+                {
+                    var test = TestContext.CurrentContext.Test;
+                    Screenshot screenshot = ((ITakesScreenshot)Driver).GetScreenshot();
+                    String filename = String.Format("/{0}.png", Guid.NewGuid().ToString()); //screenshotsPath + String.Format("/{0}.png", Guid.NewGuid().ToString());
+                    screenshot.SaveAsFile(filename, ImageFormat.Png);
 
-            Driver.Close();
+                    // TODO: Work only if create true nuget package
+                    //Allure.Lifecycle.AttachScreenshot(test.ID, screenshot.AsByteArray);
+                }
+            }
+            finally
+            {
+                Driver.Close();
+            }
         }
 
         protected void initializeDriver()

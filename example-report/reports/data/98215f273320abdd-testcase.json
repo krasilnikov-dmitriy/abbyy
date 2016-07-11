@@ -1,0 +1,38 @@
+{
+  "uid" : "98215f273320abdd",
+  "name" : "ServiceDescriptionShouldHaveRightFeatureTooltipInfo",
+  "title" : "UITests.Tests.ServiceDescriptionFeaturesTests(OpenQA.Selenium.Firefox.FirefoxDriver).ServiceDescriptionShouldHaveRightFeatureTooltipInfo",
+  "time" : {
+    "start" : 1468216993000,
+    "stop" : 1468217042000,
+    "duration" : 49000
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "",
+    "type" : "MARKDOWN"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "16567bc4860ad613",
+    "name" : "ServiceDescriptionFeaturesTests(OpenQA.Selenium.Firefox.FirefoxDriver)",
+    "title" : "UITests.Tests.ServiceDescriptionFeaturesTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-title",
+    "value" : "UITests.Tests.ServiceDescriptionFeaturesTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  }, {
+    "name" : "suite-name",
+    "value" : "ServiceDescriptionFeaturesTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  } ],
+  "parameters" : [ ]
+}

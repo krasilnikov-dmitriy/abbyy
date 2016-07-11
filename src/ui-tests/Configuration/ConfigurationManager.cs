@@ -70,6 +70,14 @@ namespace UITests.Configuration
             }
         }
 
+        public String ScreenshotsPath
+        {
+            get
+            {
+                return getFromEnvOrDefault("ScreenshotsPath", (i) => i, configuration.ScreenshotsPath);
+            }
+        }
+
         public int WebDriverImplicitlyWaitTime
         {
             get

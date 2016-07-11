@@ -18,11 +18,11 @@ namespace UITests.Models
 
         public Decimal Price { get; set; }
 
-        public List<Feature> Features { get; set; }
+        public List<Feature> Features { get; set; } = new List<Feature>();
 
         public override string ToString()
         {
-            return String.Format("ServiceDescription:[ Type = {0}, Price = {1}  \n Features: [ {2} ]]", Type, Price, String.Join(", ", Features.Select(f => f.ToString())));
+            return String.Format("ServiceDescription:[ Type = {0}, Price = {1}  \n Features: [ {2} ]]", Type, Price, String.Join(", ", Features.Where(f => f != null ).Select(f => f.ToString())));
         }
     }
 }

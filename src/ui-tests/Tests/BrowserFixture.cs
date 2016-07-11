@@ -12,8 +12,8 @@ namespace UITests.Tests
         public IEnumerator GetEnumerator()
         {
             yield return typeof(FirefoxDriver);
-            //yield return typeof(ChromeDriver);
-            //yield return typeof(InternetExplorerDriver);
+            yield return typeof(ChromeDriver);
+            yield return typeof(InternetExplorerDriver);
         }
     }
 }

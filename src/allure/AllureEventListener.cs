@@ -14,8 +14,8 @@ namespace AllureNUnitAdapter
     [Extension]
     public class AllureEventListener : ITestEventListener
     {
-        private static readonly ILog Logger = LogManager.GetLogger(typeof(AllureEventListener));
-        private static readonly Allure Lifecycle = Allure.Lifecycle;
+        private static readonly ILog logger = LogManager.GetLogger(typeof(AllureEventListener));
+        private static readonly Allure lifecycle = Allure.Lifecycle;
 
         public AllureEventListener()
         {
@@ -25,14 +25,13 @@ namespace AllureNUnitAdapter
                 var uri = new UriBuilder(codeBase);
                 string path = Path.GetDirectoryName(Uri.UnescapeDataString(uri.Path));
 
-                AllureConfig.ResultsPath =
+                AllureConfig.ResultsPath = 
                     XDocument.Load(path + "/config.xml")
                         .Descendants()
-                        .First(x => x.Name.LocalName.Equals("results-path"))
-                        .Value + "/";
-                
-                Logger.Info("Initialization completed successfully.\n");
-                Logger.Info(String.Format("Results Path: {0}", AllureConfig.ResultsPath));
+                        .First(x => x.Name.LocalName.Equals("results-path")).Value + "/";
+
+                logger.Info("Initialization completed successfully.\n");
+                logger.Info(String.Format("Results Path: {0}", AllureConfig.ResultsPath));
 
                 if (Directory.Exists(AllureConfig.ResultsPath))
                 {
@@ -42,7 +41,7 @@ namespace AllureNUnitAdapter
             }
             catch (Exception e)
             {
-                Logger.Error(String.Format("Exception in initialization"), e);
+                logger.Error(String.Format("Exception in initialization"), e);
             }
         }
 
@@ -65,29 +64,29 @@ namespace AllureNUnitAdapter
 
                     case "start-suite":
                         var startSuiteEventArgs = XmlHelper.Deserialize<StartTestSuiteEventArgs>(report);
-                        Lifecycle.TestSuiteStarted(startSuiteEventArgs);
+                        lifecycle.TestSuiteStarted(startSuiteEventArgs);
                         break;
 
                     case "test-suite":
                         var stopSuiteEventArgs = XmlHelper.Deserialize<StopTestSuiteEventArgs>(report);
-                        Lifecycle.TestSuiteFinished(stopSuiteEventArgs);
+                        lifecycle.TestSuiteFinished(stopSuiteEventArgs);
                         break;
 
                     case "start-test":
                         var startTestCaseEventArgs = XmlHelper.Deserialize<StartTestCaseEventArgs>(report);
-                        Lifecycle.TestCaseStarted(startTestCaseEventArgs);
+                        lifecycle.TestCaseStarted(startTestCaseEventArgs);
                         break;
 
                     case "test-case":
                         var stopTestCaseEventArgs = XmlHelper.Deserialize<StopTestCaseEventArgs>(report);
-                        Lifecycle.TestCaseFinished(stopTestCaseEventArgs);
+                        lifecycle.TestCaseFinished(stopTestCaseEventArgs);
                         break;
 
                 }
             }
             catch (Exception ex)
             {
-                Logger.Error(ex);
+                logger.Error(ex);
             }
         }
     }

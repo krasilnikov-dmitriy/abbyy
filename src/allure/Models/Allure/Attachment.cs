@@ -15,6 +15,9 @@ namespace AllureNUnitAdapter.Models.Allure
 
         [XmlAttribute(AttributeName = "type")]
         public string Type { get; set; }
+
+        [XmlIgnore]
+        public byte[] AttachmentAsByte { get; set; }
     }
 }
 

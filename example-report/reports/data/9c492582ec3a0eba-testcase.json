@@ -1,0 +1,38 @@
+{
+  "uid" : "9c492582ec3a0eba",
+  "name" : "SubmitDocumentForTranslateShouldRedirectOnCompletedOrderPage(Standart)",
+  "title" : "UITests.Tests.SendDocumentForTranslateTests(OpenQA.Selenium.Firefox.FirefoxDriver).SubmitDocumentForTranslateShouldRedirectOnCompletedOrderPage(Standart)",
+  "time" : {
+    "start" : 1468217034000,
+    "stop" : 1468217083000,
+    "duration" : 49000
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "",
+    "type" : "MARKDOWN"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "7092682fcf97054f",
+    "name" : "SendDocumentForTranslateTests(OpenQA.Selenium.Firefox.FirefoxDriver)",
+    "title" : "UITests.Tests.SendDocumentForTranslateTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "SendDocumentForTranslateTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  }, {
+    "name" : "suite-title",
+    "value" : "UITests.Tests.SendDocumentForTranslateTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,0 +1,41 @@
+{
+  "uid" : "fe8b86f4509fc16e",
+  "name" : "CalculateTranslationCostForDocumentShouldHaveRIghtPriceTest(\"Resources\\\\testdoc.txt\",\"Английский\",\"Русский\",System.Collections.Generic.List`1[UITests.Models.ServiceDescription])",
+  "title" : "UITests.Tests.CalculateTranslationCostTests(OpenQA.Selenium.Firefox.FirefoxDriver).CalculateTranslationCostForDocumentShouldHaveRIghtPriceTest(\"Resources\\\\testdoc.txt\",\"Английский\",\"Русский\",System.Collections.Generic.List`1[UITests.Models.ServiceDescription])",
+  "time" : {
+    "start" : 1468216972000,
+    "stop" : 1468217022000,
+    "duration" : 50000
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "System.ArgumentNullException : Value cannot be null.\nParameter name: source\nTearDown : System.TypeInitializationException : The type initializer for 'System.Drawing.GDIPlus' threw an exception.\n  ----> System.DllNotFoundException : libgdiplus.dylib",
+    "stackTrace" : null
+  },
+  "description" : {
+    "value" : "",
+    "type" : "MARKDOWN"
+  },
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "8a4346f55b50091c",
+    "name" : "CalculateTranslationCostTests(OpenQA.Selenium.Firefox.FirefoxDriver)",
+    "title" : "UITests.Tests.CalculateTranslationCostTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "CalculateTranslationCostTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  }, {
+    "name" : "suite-title",
+    "value" : "UITests.Tests.CalculateTranslationCostTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  } ],
+  "parameters" : [ ]
+}

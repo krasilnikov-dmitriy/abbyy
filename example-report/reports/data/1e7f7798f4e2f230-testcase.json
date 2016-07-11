@@ -1,0 +1,41 @@
+{
+  "uid" : "1e7f7798f4e2f230",
+  "name" : "SubmitDocumentForTranslateShouldRedirectOnCompletedOrderPage(Standart)",
+  "title" : "UITests.Tests.SendDocumentForTranslateTests(OpenQA.Selenium.Firefox.FirefoxDriver).SubmitDocumentForTranslateShouldRedirectOnCompletedOrderPage(Standart)",
+  "time" : {
+    "start" : 1468216543000,
+    "stop" : 1468216585000,
+    "duration" : 42000
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "TearDown : System.TypeInitializationException : The type initializer for 'System.Drawing.GDIPlus' threw an exception.\n  ----> System.DllNotFoundException : libgdiplus.dylib",
+    "stackTrace" : null
+  },
+  "description" : {
+    "value" : "",
+    "type" : "MARKDOWN"
+  },
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "7878b5cd2102167d",
+    "name" : "SendDocumentForTranslateTests(OpenQA.Selenium.Firefox.FirefoxDriver)",
+    "title" : "UITests.Tests.SendDocumentForTranslateTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "SendDocumentForTranslateTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  }, {
+    "name" : "suite-title",
+    "value" : "UITests.Tests.SendDocumentForTranslateTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  } ],
+  "parameters" : [ ]
+}

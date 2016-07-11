@@ -1,0 +1,38 @@
+{
+  "uid" : "324591811d2c3e0e",
+  "name" : "PageShouldHaveLanguageSwitcherWith5Options(System.Func`2[OpenQA.Selenium.IWebDriver,UITests.Pages.BasePage])",
+  "title" : "UITests.Tests.LanguageSwitcherTests(OpenQA.Selenium.Firefox.FirefoxDriver).PageShouldHaveLanguageSwitcherWith5Options(System.Func`2[OpenQA.Selenium.IWebDriver,UITests.Pages.BasePage])",
+  "time" : {
+    "start" : 1468216972000,
+    "stop" : 1468216979000,
+    "duration" : 7000
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "",
+    "type" : "MARKDOWN"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "f25bf8d9e91e3464",
+    "name" : "LanguageSwitcherTests(OpenQA.Selenium.Firefox.FirefoxDriver)",
+    "title" : "UITests.Tests.LanguageSwitcherTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "LanguageSwitcherTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  }, {
+    "name" : "suite-title",
+    "value" : "UITests.Tests.LanguageSwitcherTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  } ],
+  "parameters" : [ ]
+}

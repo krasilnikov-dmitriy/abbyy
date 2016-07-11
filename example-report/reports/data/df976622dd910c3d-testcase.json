@@ -1,0 +1,41 @@
+{
+  "uid" : "df976622dd910c3d",
+  "name" : "ServiceDescriptionShouldHaveRightFeatureTooltipInfo",
+  "title" : "UITests.Tests.ServiceDescriptionFeaturesTests(OpenQA.Selenium.Firefox.FirefoxDriver).ServiceDescriptionShouldHaveRightFeatureTooltipInfo",
+  "time" : {
+    "start" : 1468216510000,
+    "stop" : 1468216551000,
+    "duration" : 41000
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "TearDown : System.TypeInitializationException : The type initializer for 'System.Drawing.GDIPlus' threw an exception.\n  ----> System.DllNotFoundException : libgdiplus.dylib",
+    "stackTrace" : null
+  },
+  "description" : {
+    "value" : "",
+    "type" : "MARKDOWN"
+  },
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "3ea3144b030ce1a4",
+    "name" : "ServiceDescriptionFeaturesTests(OpenQA.Selenium.Firefox.FirefoxDriver)",
+    "title" : "UITests.Tests.ServiceDescriptionFeaturesTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-title",
+    "value" : "UITests.Tests.ServiceDescriptionFeaturesTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  }, {
+    "name" : "suite-name",
+    "value" : "ServiceDescriptionFeaturesTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  } ],
+  "parameters" : [ ]
+}

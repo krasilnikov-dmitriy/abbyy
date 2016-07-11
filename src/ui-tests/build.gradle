@@ -8,3 +8,41 @@ msbuild {
     // Generates XML documentation file (from javadoc through custom DocLet)
     generateDoc = false
 }
+
+task executeTests << {
+    // re-create screenshots directory
+    def screenshotsDirectory = new File("$projectDir/bin/Debug/screenshots")
+    if (screenshotsDirectory.exists()) {
+        screenshotsDirectory.deleteDir()
+    }
+    screenshotsDirectory.mkdirs()
+
+    String osName = System.getProperty("os.name").toLowerCase();
+    if (osName.contains("windows")) {
+        tasks.executeTestsWin.execute()
+    } else {
+        tasks.executeTestsUnix.execute()
+    }
+}
+executeTests.dependsOn project.rootProject.tasks.build
+
+task executeTestsUnix(type: Exec) {
+    executable "bash"
+    workingDir "$projectDir/bin/Debug"
+
+    args "-c", "mono $project.rootProject.projectDir/packages/NUnit.ConsoleRunner.3.4.1/tools/nunit3-console.exe UITests.dll --workers=4"
+}
+
+task executeTestsWin(type: Exec) {
+    executable "cmd"
+    workingDir "$projectDir/bin/Debug"
+
+    args "/c", "$project.rootProject.projectDir/packages/NUnit.ConsoleRunner.3.4.1/tools/nunit3-console.exe UITests.dll --workers=4"
+}
+
+task generateAllureReport(type: Exec) {
+    executable "bash"
+    workingDir "$projectDir/bin/Debug"
+
+    args "-c", "allure -v generate allure-results/ -o reports"
+}

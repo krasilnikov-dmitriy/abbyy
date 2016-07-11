@@ -1,0 +1,38 @@
+{
+  "uid" : "2c0f80539c738b73",
+  "name" : "CalculateTranslationCostForDocumentShouldHaveRIghtPriceTest(\"Resources\\\\testdoc.txt\",\"Немецкий\",\"Русский\",System.Collections.Generic.List`1[UITests.Models.ServiceDescription])",
+  "title" : "UITests.Tests.CalculateTranslationCostTests(OpenQA.Selenium.Firefox.FirefoxDriver).CalculateTranslationCostForDocumentShouldHaveRIghtPriceTest(\"Resources\\\\testdoc.txt\",\"Немецкий\",\"Русский\",System.Collections.Generic.List`1[UITests.Models.ServiceDescription])",
+  "time" : {
+    "start" : 1468217668000,
+    "stop" : 1468217712000,
+    "duration" : 44000
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "",
+    "type" : "MARKDOWN"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "8cb2319c0aa64514",
+    "name" : "CalculateTranslationCostTests(OpenQA.Selenium.Firefox.FirefoxDriver)",
+    "title" : "UITests.Tests.CalculateTranslationCostTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "CalculateTranslationCostTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  }, {
+    "name" : "suite-title",
+    "value" : "UITests.Tests.CalculateTranslationCostTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  } ],
+  "parameters" : [ ]
+}

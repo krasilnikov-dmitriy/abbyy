@@ -1,0 +1,38 @@
+{
+  "uid" : "185cd183feb87f17",
+  "name" : "PageShouldHaveContactPhone(System.Func`2[OpenQA.Selenium.IWebDriver,UITests.Pages.BasePage])",
+  "title" : "UITests.Tests.ContactInformationTests(OpenQA.Selenium.Firefox.FirefoxDriver).PageShouldHaveContactPhone(System.Func`2[OpenQA.Selenium.IWebDriver,UITests.Pages.BasePage])",
+  "time" : {
+    "start" : 1468217626000,
+    "stop" : 1468217638000,
+    "duration" : 12000
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "",
+    "type" : "MARKDOWN"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "e949c0a2a66c48e8",
+    "name" : "ContactInformationTests(OpenQA.Selenium.Firefox.FirefoxDriver)",
+    "title" : "UITests.Tests.ContactInformationTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "ContactInformationTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  }, {
+    "name" : "suite-title",
+    "value" : "UITests.Tests.ContactInformationTests(OpenQA.Selenium.Firefox.FirefoxDriver)"
+  } ],
+  "parameters" : [ ]
+}

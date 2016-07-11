@@ -42,7 +42,8 @@ namespace AllureNUnitAdapter
 
         public void AttachScreenshot(String testCaseId, byte[] screenshot)
         {
-            var attachment = saveScreenshotAsAttachment(screenshot, "Screenshot");
+            logger.Info(String.Format("Attach screenshot to {0}", testCaseId));
+            var attachment = new Attachment() { AttachmentAsByte = screenshot };
             lock (attachmentLock)
             {
                 attachmentStorage.Put(testCaseId, attachment);
@@ -137,8 +138,8 @@ namespace AllureNUnitAdapter
                     break;
             }
 
-            var attachments = attachmentStorage.Get(eventArgs.Id);
-            result.Attachments = attachments;
+            //var attachments = attachmentStorage.Get(eventArgs.Id);
+            //result.Attachments = attachments.Where(a => a.AttachmentAsByte != null).Select(a => saveScreenshotAsAttachment(a.AttachmentAsByte, "Screenshot")).ToList();
 
             lock (testSuiteLock)
             {
@@ -150,8 +151,8 @@ namespace AllureNUnitAdapter
 
         private Attachment saveScreenshotAsAttachment(byte[] attachment, String title)
         {
-            var relativePath = generateSha256(attachment) + "-attachment.jpg";
-            var path = AllureConfig.ResultsPath + Path.DirectorySeparatorChar + relativePath;
+            var relativePath = generateSha256(attachment) + "-attachment.png";
+            var path = AllureConfig.ResultsPath + relativePath;
             if (!File.Exists(path))
             {
                 try
@@ -171,7 +172,7 @@ namespace AllureNUnitAdapter
                 }
 
             }
-            return new Attachment() { Title = title, Type = "jpg", Source = relativePath };
+            return new Attachment() { Title = title, Type = "png", Source = relativePath };
         }
 
         private static string generateSha256(byte[] data)
